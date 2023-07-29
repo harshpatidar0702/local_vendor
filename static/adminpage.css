@@ -1,0 +1,49 @@
+/* adminpage.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./logo1.png);
+    background-repeat: no-repeat;
+    background-position-y: 216px;
+    background-position-x: 516px;
+    background-size: 35%;
+
+}
+
+/* Header Styles */
+header {
+  background-color: rgb(31, 30, 30); /* Semi-transparent black background for the header */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Content Styles */
+.content {
+  margin: 40px;
+  text-align: center;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #191919;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+

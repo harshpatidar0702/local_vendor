@@ -1,0 +1,68 @@
+/* Set font family and color for body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  /* Style header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Style main sections */
+  main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+
+  /* Style form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    margin: 10px;
+  }
+
+  input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  /* Style footer */
+  footer {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Center h1 and h2 headings */
+  h1, h2 {
+    text-align: center;
+  }

@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Order Details</title>
+    <link rel="stylesheet" type="text/css" href="static/vendororder.css" >
+  </head>
+  <body>
+    <h1>Order Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>Product Name</th>
+          <th>Total Price</th>
+          <th>Order Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for row in order %}
+        <tr>
+
+          <td>{{row[2]}}</td>
+          <td>{{row[0]}}</td>
+          <td>{{row[1]}}</td>
+          <td>Pending</td>
+          <td>
+            <form>
+              <select name="order-status">
+                <option value="accept">Accept</option>
+                <option value="deny">Deny</option>
+              </select>
+              <input type="submit" value="Submit">
+            </form>
+          </td>
+        </tr>
+      {% endfor %}
+
+
+      
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Customers Sales Dashboard</title>
+    <link rel="stylesheet" href="static/vendorsales.css">
+  </head>
+  <body>
+    <header>
+      <h1>Customers  Dashboard</h1>
+      <nav>
+        <a href="./">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="sales-report">
+        <h2>Sales Report</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Customer Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+              <th>Address</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+
+            <tr>
+              <td>{{row[0]}}</td>
+              <td>{{row[1]}}</td>
+              <td>{{row[3]}}</td>
+              <td>{{row[2]}}</td>
+
+            </tr>
+            {% endfor %}
+
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+
+

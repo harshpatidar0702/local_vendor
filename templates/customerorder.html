@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Order History - Customer</title>
+    <link rel="stylesheet" href="static/vendorsales.css">
+  </head>
+  <body>
+    <header>
+      <h1>Order History</h1>
+      <nav>
+        <a id="cart" href=" /customercart">Cart</a>
+        <a  href="/">Home</a>
+      </nav>
+    </header>
+    <main>
+<table>
+        <thead>
+            <tr>
+              <th>Shop ID</th>
+              <th>Product Name</th>
+              <th>Product Price</th>
+
+            </tr>
+          </thead>
+      {% for row in order %}
+    <tr>
+              <td>{{row[2]}}</td>
+              <td>{{row[0]}}</td>
+              <td>{{row[1]}}</td>
+
+    </tr>
+            {% endfor %}
+    </main>
+  </body>
+</html>

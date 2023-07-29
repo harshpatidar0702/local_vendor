@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+    <link rel="stylesheet" href="static/customercart.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Cart</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+<!--                <li><a href="/customerpage">Profile</a></li>-->
+                <li><a href="/customerorder">Order</a></li>
+                <li><a href="displayincart">Refresh</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                   <th>Remove</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                      {% for row in cart %}
+            <form id="form1" name="form1" action="/clear_cart" method="POST">
+                <tr>
+                    <td>
+                        {{row[1]}}
+                    </td>
+                    <td><span class="rupee-sign">₹</span> {{row[2]}}</td>
+                    <input type="hidden" id="pid" name="pid" value="{{row[1]}}">
+
+                    <td>
+                        <input type="number" value="1"  id="in2">
+                    </td>
+                    <td>
+                        <input type="submit" value="Remove" name="Remove">
+                    </td>
+            </form>
+                      </td>
+                      </tr>
+                        {% endfor %}
+                      <br>
+            </tbody>
+        </table>
+        <button class="checkout-btn"><a class="a" href="/chechoutpopup">Checkout</a></button>
+    </div>
+</body>
+</html>

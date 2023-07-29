@@ -1,0 +1,108 @@
+/* customerpage.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #fdb4b48e;
+  padding: 26px;
+  display: flex;
+  justify-content: flex-end;
+}
+h2 {
+  margin-bottom: 10px;
+  padding-right: 36%;
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+nav{
+  padding-top: 0%;
+}
+nav a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Main Styles */
+main {
+  margin: 20px;
+}
+
+.search {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="text"] {
+  padding: 18px;
+  width: 433px;
+  border-radius: 26px;
+  border: 1px solid #ccc;
+
+}
+
+.search button[type="submit"] {
+  padding: 14px 34px;
+    background-color: #0b0b0bd1;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.shops {
+  margin-top: 20px;
+}
+
+
+
+.shops ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.shops li {
+  margin-bottom: 20px;
+  width: calc(33.33% - 20px);
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.shops li h3 {
+  margin: 0;
+}
+
+.shops li p {
+  margin: 0;
+  color: #888;
+}
+
+.shops li a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.shops li a:hover {
+  background-color: #0808089d;
+}

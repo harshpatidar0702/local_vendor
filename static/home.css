@@ -1,0 +1,105 @@
+.header h1{
+    align-content: center;
+    font-size: medium;
+    padding-left: 9%;
+    zoom: 500%;
+    font-weight: bolder;
+    margin-top: 4%;
+    color: rgb(255 122 122);
+}
+/*.body {
+    font-family: Arial, sans-serif;
+    background-image:none;
+    background-size: cover;
+    justify-content:center;
+}*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 152px;
+    background-color:  rgb(255 171 171 / 49%);
+}
+.logo {
+    height: 132px;;
+    will-change: contents;
+    padding: 25px;
+    border-radius: 60%;
+
+}
+.options {
+    display: flex;
+    align-items: center;
+    font: icon;
+
+}
+.option {
+    margin: 0 10px;
+    color: #0a0a0aaf;
+    text-decoration: none;
+    font-size: large;
+    padding-right: 25px;
+    font-weight: 200;
+}
+.option:hover {
+    color: #666;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.a{
+    color: black;
+    text-decoration: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    text-decoration: none;
+}
+.dropdown:hover .dropdown-content {
+    display:grid;
+    text-decoration-color: black;
+    text-decoration: none;
+    overflow: hidden;
+}
+.maindiv{
+    width: 99%;
+    height: 495px;
+    position: absolute;
+    left: 50%;
+    top: 59%;
+    transform: translate(-50%, -50%);
+    background-image: url(./offer1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px rgb(251, 178, 178);
+    animation: slider 5s infinite linear;
+}
+@keyframes slider {
+    40%{ background-image: url(./offer3.webp);}
+    80%{background-image: url(./Groceryoffer.jpg);}
+
+}
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 524px;
+}
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    flex-grow: 1;
+}
+.line p {
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}

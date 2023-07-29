@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Customer Page</title>
+    <link rel="stylesheet" href="static/customerpage.css">
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+      <nav>
+        <a href="./customerorder">Orders</a>
+        <a href="/customercart">Cart</a>
+        <a href="/">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="search">
+        <form action="/customerpage">
+          <input type="text" placeholder="Search shops...">
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      <section class="shops">
+        <h2>Shops</h2>
+        <ul>
+          {% for row in ved_data %}
+          <li>
+            <h3>{{row[0]}}</h3>
+            <p>Category :{{row[1]}}</p>
+            <p>Address :{{row[2]}}</p>
+            <p>Phone :{{row[3]}}</p>
+
+            <form action="/viewproduct" method="POST">
+              <input type="hidden" name="shop_id" value="{{ row[4] }}">
+              <input type="submit" value="View Product">
+    </form>
+            {% endfor %}
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

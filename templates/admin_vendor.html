@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Vendor Dashboard</title>
+    <link rel="stylesheet" href="static/vendorsales.css">
+  </head>
+  <body>
+    <header>
+      <h1>Vendor  Dashboard</h1>
+      <nav>
+        <a href="/">Logout</a>
+      </nav>
+    </header>
+    <main>
+      <section class="sales-report">
+        <h2> Report</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Vendor Name</th>
+              <th>Email</th>
+              <th>Address</th>
+              <th>Phone Number</th>
+              <th>Shop ID</th>
+              <th>Sales Report</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in data %}
+
+            <tr>
+              <td>{{row[0]}}</td>
+              <td>{{row[1]}}</td>
+              <td>{{row[2]}}</td>
+              <td>{{row[3]}}</td>
+              <td>{{row[4]}}</td>
+             <td> <form action="/admin_report" method="POST">
+               <label for="filename">Enter Filename:</label>
+               <input type="text" id="filename" name="filename" required>
+               <button type="submit">Generate Report</button>
+               <input type="hidden" name="shop_id" value="{{ row[4] }}">
+
+             </form></td>
+            </tr>
+            {% endfor %}
+
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
+
+

@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Customer Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="static/customersignin.css">
+  </head>
+  <body>
+    <header>
+      <h1>Customer Sign Up</h1>
+    </header>
+
+    <main>
+      <form action="/customerpage" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required >
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$">
+        <br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$">
+        <br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address"></textarea>
+        <br>
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone_number" maxlength="10" pattern="[0-9]{10}" required>
+        <br>
+        <input type="submit" value="Sign Up">
+      </form>
+      <script>
+        function validateForm() {
+          var password = document.getElementById("password").value;
+          var confirmPassword = document.getElementById("confirm-password").value;
+          if (password != confirmPassword) {
+            alert("Passwords do not match");
+            return false;
+          }
+        }
+        </script>
+    </main>
+    <footer>
+      <p>&copy; 2023 Our Company</p>
+    </footer>
+  </body>
+</html>

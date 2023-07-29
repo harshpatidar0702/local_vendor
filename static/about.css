@@ -1,0 +1,44 @@
+/* Set font family and color for body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  /* Style header */
+  header {
+    background-color: rgb(255 171 171 / 49%);
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  /* Style main sections */
+  section {
+    margin-bottom: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  /* Style images */
+  img {
+    max-width: 12%;
+    height:fit-content;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Style footer */
+  footer {
+    background-color: rgb(255 171 171 / 49%);
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  /* Center h1 and h2 headings */
+  h1, h2 {
+    text-align: center;
+  }

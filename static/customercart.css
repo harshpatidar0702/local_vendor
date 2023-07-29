@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.a {
+  text-decoration: none;
+  color: #000000;
+}
+
+header {
+  background-color: rgb(255 171 171 / 49%);
+  color: #000000;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #01209b9d;
+  color: #070707;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.checkout-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #b0bace;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: #000000;
+}
+
+.product-img {
+  max-width: 100px;
+  height: auto;
+}
+
+.rupee-sign {
+  font-weight: bold;
+}

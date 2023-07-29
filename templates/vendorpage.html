@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="static/vendorpage.css">
+</head>
+<body>
+  <header>
+    <h1>Vendor</h1>
+    <nav>
+      <ul>
+        <li><a href="/vendor_product">Product</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/vendororder">Orders</a></li>
+        <li><a href="/filename">Download Sales Report</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="add-product">
+      <h2>Add Product</h2>
+      <form action="/vendoraddproduct" method="POST">
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="product_name" required>
+        <br>
+        <label for="product_category">Product Category:</label>
+        <select id="product_category" name="product_category" required>
+          <option value="" selected disabled>Select Category</option>
+          <option value="grocery">Grocery</option>
+          <option value="dairy">Dairy</option>
+          <option value="stationery">Stationery</option>
+        </select>
+        <br>
+        <label for="product_price">Product Price:</label>
+        <input type="number" id="product_price" name="product_price" min="0" step="0.01" required>
+        <br>
+        <label for="product_description">Product Description:</label>
+        <textarea id="product_description" name="product_description" required></textarea>
+        <br>
+        <input type="submit" value="Add Product">
+      </form>
+    </section>
+
+<!--          </div>-->
+<!--        </li>-->
+
+<!--      </ul>-->
+<!--    </section>-->
+
+  </main>

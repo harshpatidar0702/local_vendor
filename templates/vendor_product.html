@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Store Products</title>
+    <link rel="stylesheet" href="static/viewproduct.css">
+  </head>
+  <body>
+    <h1>Product</h1>
+
+
+  {% for row in data %}
+    <form action="remove_product" method="POST">
+     <div class="product">
+      <h2>Product Name : {{row[0]}}</h2>
+      <p>Product Category : {{row[1]}} </p>
+      <p>Product description: {{row[2]}}</p>
+      <p>Product Price: {{row[3]}}</p><br>
+
+      <input type="hidden" value={{row[0]}} name="Product_Name" >
+      <input type="submit" value="Remove">
+    </div>
+    </form>
+
+  {% endfor %}
+
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>Vendor Sign In</title>
+    <link rel="stylesheet" type="text/css" href="static/vendorsignin.css">
+  </head>
+  <body>
+    <h1>Vendor Sign In</h1>
+    <form action="/vendorpage" METHOD="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+      <br>
+      <label for="shop_name">Shop Name:</label>
+      <input type="text" id="shop_name" name="shop_name" required>
+      <br>
+      <label for="shop_id">Shop ID:</label>
+      <input type="text" id="shop_id" name="shop_id" required>
+      <br>
+      <label for="shop_category">Shop Category:</label>
+      <select id="shop_category" name="shop_category" required>
+        <option name="shop_category"  value="">Select Shop Category</option>
+        <option name="shop_category"  value="grocery">Grocery</option>
+        <option name="shop_category"  value="dairy">Dairy</option>
+        <option name="shop_category"  value="stationary">Stationary</option>
+      </select>
+      <br>
+      <label for="shop_address">Shop Address:</label>
+      <textarea id="shop_address" name="shop_address" required></textarea>
+      <br>
+      <label for="shop_details">Shop Details:</label>
+      <textarea id="shop_details" name="shop_details"></textarea>
+      <br>
+      <label for="phone_no">Phone Number:</label>
+      <input type="number" id="phone_no" name="phone_no" required>
+      <br>
+      <br>
+
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
